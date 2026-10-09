@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Minha rotina</h1>
+            <p>Organize suas tarefas e conquiste seus objetivos.</p>
+        </header>
+
+        <section class="task-box">
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Digite uma nova tarefa..."
+                    maxlength="150"
+                    required
+                >
+                <button type="submit">Adicionar</button>
+            </form>
+
+            <div class="progress">
+                <span id="task-count">0 tarefas concluídas</span>
+                <span id="progress-percent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <ul id="task-list"></ul>
+
+            <p id="empty-message">Sua lista está vazia. Adicione uma tarefa!</p>
+
+            <button id="clear-completed" class="clear-button" type="button">
+                Limpar concluídas
+            </button>
+        </section>
+
+        <footer>
+            <p>Um passo de cada vez. Você consegue!</p>
+        </footer>
+    </main>
+</body>
+</html>
